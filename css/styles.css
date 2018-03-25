@@ -1,0 +1,63 @@
+body{
+    background: url(../images/stars.jpg);
+    background-attachment: fixed;
+}
+
+
+.container{
+    background-color: black;
+    color: white;
+}
+
+header{
+  
+}
+footer{
+    background: linear-gradient(to bottom right, red, yellow);
+    background-color: tomato;
+}
+.tabs{
+margin-top : 0.5em;
+margin-bottom : 0.5em;
+}
+.tab-content{
+    margin-bottom: 1em;
+}
+.material-icons{
+    font-size: 15px;
+    margin-right: 0.5em; 
+}
+.navbar{
+    margin-top: 1em;
+    background-image: url("IMAGE_URL"), linear-gradient(to bottom right, red, yellow);
+    background-color: tomato;
+}
+.navbar-toggler-icon{
+   color:black;
+    background-color: white;
+}
+.nav-item{
+    color: white;
+}
+.navbar-brand{
+    color: ghostwhite;
+    background-color:green;
+    padding: 0.5em;
+    border: solid 1px green;
+    border-radius: 10px;
+}
+.nav-item:hover{
+    color: gold;
+    
+}
+.navbar-brand:hover{
+    color: gold;
+}
+
+#mars{
+    background-color: steelblue;
+    background: url(../images/mars.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 300px;
+}
