@@ -9,8 +9,27 @@ body{
     color: white;
 }
 
-header{
-  
+    /* Hero unit styling ======================================================================== */
+article{
+    border-bottom: solid 1px white;
+    padding-bottom: 1em;
+}
+
+.hero{
+    background-color: steelblue;
+    background: url(../images/mars.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 300px;
+}
+#headerImage{
+  height: 150px;
+  width: 100%;
+  background: url(../images/header.jpg);
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: 1200px;
+
 }
 footer{
     background: linear-gradient(to bottom right, red, yellow);
@@ -27,6 +46,9 @@ margin-bottom : 0.5em;
     font-size: 15px;
     margin-right: 0.5em; 
 }
+
+
+    /* Main menu styling ======================================================================== */
 .navbar{
     margin-top: 1em;
     background-image: url("IMAGE_URL"), linear-gradient(to bottom right, red, yellow);
@@ -38,12 +60,14 @@ margin-bottom : 0.5em;
 }
 .nav-item{
     color: white;
+    border-left: solid 1px white;
 }
+
 .navbar-brand{
     color: ghostwhite;
-    background-color:green;
+    background-color:blue;
     padding: 0.5em;
-    border: solid 1px green;
+    border: solid 1px blue;
     border-radius: 10px;
 }
 .nav-item:hover{
@@ -54,10 +78,95 @@ margin-bottom : 0.5em;
     color: gold;
 }
 
-#mars{
-    background-color: steelblue;
-    background: url(../images/mars.png);
-    background-position: right top;
-    background-repeat: no-repeat;
-    background-size: 300px;
+.navactive{
+    background-color: orange;
 }
+/* mobile menu text spacing fix */
+@media only screen and (max-width: 600px) {
+    .nav-item>*{
+      margin-left: 15px;
+    }
+    .navbar-brand{
+        margin-bottom: 0.5em;
+}
+}
+
+
+/* thumbnail gallery styling ======================================================================== */
+.gallery{
+    border: solid 2px white;
+}
+
+.imageStyle{
+    border: solid 3px white;
+}
+.imageStyle:hover{
+    border: solid 3px red; 
+    cursor: pointer;
+}
+#mainImage{
+    border: solid 3px white;
+}
+.caption{
+   padding: 0.4em;
+    background-color: brown;
+    border: solid 1px white;
+}
+/* Featured module styling ======================================================================== */
+
+.newsImg{
+width: 100%;
+}
+.newsModuleWrapper{
+    border-bottom: solid 1px white;
+    padding: 1em;
+}
+
+/* Most popular module styling ======================================================================== */
+.popularModuleWrapper{
+    border-bottom: solid 4px yellow;
+    padding: 0.5em;
+    font-size: 0.8em;
+}
+.popularModuleWrapper img{
+    Margin-top: 1em;
+    border: solid 3px white;
+}
+.popularModuleWrapper a{
+color:white;
+}
+.popularModuleWrapper a:hover{
+    color:yellow;
+    text-decoration: none;
+    }
+    /* two column module styling ======================================================================== */
+    .twoCol{
+        padding: 1em;
+    }
+
+    /* portfolio styling ======================================================================== */
+    .portImg{
+        cursor: pointer;
+        border: solid 1px white;
+        opacity: 1;
+    }
+    .portRow{
+       margin-top: 1em;
+       margin-bottom: 1em;
+    }
+    .text{
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        margin: 1em;
+    }
+
+    .text:hover{
+        cursor: pointer;
+    }
+    .darken{
+        opacity: 0.5;
+    }
+    .text a{
+        color: yellow;
+    }
